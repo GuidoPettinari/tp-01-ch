@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+*{
+	box-sizing:border-box; 
+	/*descuenta del ancho y alto, lo sumado
+	en padding y border. Lo descuenta hacia adentro y no hacia afuera*/
+	
+}
+body {
+	font-family: 'Raleway', sans-serif;
+	margin:0;
+}	
+
+/* Resets*/
+ul,ol{
+	list-style:none; /*elimina la viñeta*/
+	padding:0;
+	margin:0;
+}
+figure{
+	margin:0; /*aplico margin 0 al logo*/
+}
+/*tamaños
+  width
+  height
+  */
+
+  .main-header {
+  	width:1200px;
+  	padding: 20px 0;
+  	/* Centrar el main header*/
+  	margin:auto;
+
+  }
+
+  .logo {
+	float:left;
+  }
+  .main-nav {
+	float:right;
+	background: #f00;
+
+  }
+
+.main-nav li {
+	float:left;
+	margin:8px 0 0 15px;
+}
+  .cleaner{
+  	clear:both;
+  }
+#banner{
+	background: url(../images/indexbanner-bg3.jpg) center top 
+	no-repeat;
+	background-size:cover;
+
+}
+
+.container {
+	width:1200px;
+	margin:auto;
+}
+
+/* PONGO PADDING-TOP PARA QUE EL TITULO DEL BANNER TOME 
+DISTANCIA Y MARGIN 0 PARA QUE QUEDE PEGADO A MI HEADER */
+
+.banner-title {
+	font-size:50px;
+	color:#fff;
+	padding-top:120px;
+	margin:0;
+
+}
+
+.banner-text {
+	font-size:20px;
+	color:#fff;
+}
+
+/*EDITO EL FORMULARIO */
+
+.register {
+	background-color:#fff;
+	position: relative;
+	top: 20px;
+}
+
+.register input {
+	width:1000px;
+	height:60px;
+	font-size: 16px;
+	font-family: inherit;
+	
+}
+
+.register button {
+	border:none;
+	background-color: #06b4f2;
+	width:195px;
+	height:60px;
+	color:#fff;
+	font-size: 16px;
+	
+}
+
+/*EDITO TERCER SECTION CON TITULOS*/
+.producto{
+	border: blue 2px dashed;
+	width:300px;
+	float:left;
+	text-align:center;	
+	margin-top:50px;
+}
+
+.footer-text{
+	float:left;
+}
+.footer-nav{
+	float:right;
+}
+.footer-nav li {
+	float:right;
+	margin: 8px 0 0 15px;
+}
