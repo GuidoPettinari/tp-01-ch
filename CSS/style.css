@@ -1,359 +1,344 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,400,700);
+
+/* selector universal */
 *{
-	box-sizing:border-box; 
-	/*descuenta del ancho y alto, lo sumado
-	en padding y border. Lo descuenta hacia adentro y no hacia afuera*/
-	
+	box-sizing: border-box;
+	/* descuenta del width y height, lo sumado en padding y border */
 }
-body {
+
+body{
 	font-family: 'Raleway', sans-serif;
-	margin:0;
-}	
-
-/* Resets*/
-ul,ol{
-	list-style:none; /*elimina la viñeta*/
-	padding:0;
-	margin:0;
+	margin: 0;
+	/*
+		margin-top: ;
+		margin-right: ;
+		margin-bottom: ;
+		margin-left: ;
+	*/
 }
+
+/* Resets */
+
+/* agrupación de selectores */
+ul, ol{
+	list-style: none; /* elimina la viñeta */
+	margin: 0;
+	padding: 0;
+	/*
+		padding-top: ;
+		padding-right: ;
+		padding-bottom: ;
+		padding-left: ;
+	*/
+}
+
 figure{
-	margin:0; /*aplico margin 0 al logo*/
-}
-/*tamaños
-  width
-  height
-  */
-
-/*header*/
-  .main-header {
-  	width:1200px;
-  	padding: 20px 0;
-  	/* Centrar el main header*/
-  	margin:auto;
-
-  }
-
-/*logo*/
-  .logo {
-	float:left;
-  }
-
-  /*caja home contact*/
-  .main-nav {
-	float:right;
-	background: #f00;
+	margin: 0;
 }
 
-/*home contact*/
-.main-nav li {
-	float:left;
-	margin:8px 0 0 15px;
+/*
+	tamaños
+		ancho - width:;
+		alto - height:;
+
+	modelo de caja - box model
+		- width
+		- height
+		- padding
+		- border
+			border-style [solid | dashed | dotted | double]
+			border-width
+			border-color
+			border: ;
+		- margin
+*/
+
+.main-header{
+	width: 1200px;
+	margin: auto;
+	padding: 20px 0;
 }
 
-/*para que no flote*/
-  .cleaner{
-  	clear:both;
-  }
+.logo{
+	float: left;
+}
 
-  /*inserta imagen banner*/
+.logo figcaption{
+	display: none;
+}
+
+.main-nav{
+	float: right;
+}
+
+/* selector descendiente */
+.main-nav li{
+	float: left;
+	margin: 5px 0 0 15px;
+}
+
+.main-nav a{
+	text-decoration: none;
+	color: #222;
+}
+
+.cleaner{
+	clear: both;
+}
+
 #banner{
-	background: url(../images/indexbanner-bg3.jpg) center top 
-	no-repeat;
-	background-size:cover;
-
+	background: url(../images/indexbanner-bg3.jpg) center top no-repeat;
+	background-size: cover;
 }
 
-
-.container {
-	width:1200px;
-	margin:auto;
+.container{
+	width: 1200px;
+	margin: auto;
 }
 
-/* PONGO PADDING-TOP PARA QUE EL TITULO DEL BANNER TOME 
-DISTANCIA Y MARGIN 0 PARA QUE QUEDE PEGADO A MI HEADER */
-
-.banner-title {
-	font-size:50px;
-	color:#fff;
-	padding-top:120px;
-	margin:0;
-
+.banner-title{
+	font-size: 50px;
+	color: #fff;
+	padding-top: 150px;
+	margin: 0;
 }
 
-.banner-text {
-	font-size:20px;
-	color:#fff;
+.banner-text{
+	font-size: 20px;
+	color: #fff;
 }
 
-/*EDITO EL FORMULARIO */
-
-.register {
-	background-color:#fff;
+.register{
+	background-color: #06B4F2;
 	position: relative;
-	top: 20px;
+	top: 30px;
 }
 
-.register input {
-	width:1000px;
-	height:60px;
+.register input{
+	width: 1000px;
+	height: 60px;
 	font-size: 16px;
+	padding: 0 15px;
 	font-family: inherit;
-	
 }
 
-.register button {
-	border:none;
-	background-color: #06b4f2;
-	width:195px;
-	height:60px;
-	color:#fff;
+.register button{
+	border: none;
+	background-color: #06B4F2;
+	width: 195px;
+	height: 60px;
+	color: #fff;
+	font-family: inherit;
 	font-size: 16px;
-	
 }
-
-/*EDITO TERCER SECTION CON TITULOS*/
-
 
 .producto{
-	
-	width:300px;
-	float:left;
-	text-align:center;	
-	margin-top:150px;
+	width: 300px;
+	text-align: center;
+	float: left;
+	margin-top: 100px;
+	padding: 0 15px;
 }
 
-/*titulos de la tercer seccion */
-
-.headerscentrados{
-	text-transform:uppercase;
-	letter-spacing:2px;
-	font-size:15px;
+.producto h4{
+	text-transform: uppercase;
 }
 
-/*DISEÑO DE LA CUARTA SECCION CELULAR IMG */
-
-/*titulo de la cuarta seccion Hostro Services*/
-
-.headerssegunda{
-	font-size:40px;
-	text-align:center;
-	margin-top:100px;
+.title-services{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 40px;
+	margin-bottom: 0;
 }
 
-/*subtitulo de la cuarta seccion*/
-.sub-titulo{
-	margin-top:0px;
-	margin-bottom:100px;
-	text-align:center;
+.title-services + p{
+	text-align: center;
+	margin: 0 0 100px;
+	font-size: 16px;
 }
 
-.caja-izquierda {
-	width:400px;
-	float:left;
-	margin-top:60px;
-}
-.caja-izquierda li{
-	position:relative;	
-	text-align:right;
-	padding-right:80px;
-	padding-top:3px;
-}
-.caja-izquierda li h3{
-	text-transform:uppercase;
-	font-size: 15px;
-	letter-spacing:2px;
-}
-.iconos-telizq {
-	position:absolute;
-	top:0;
-	right:0;
-
-	
+.left-services{
+	width: 400px;
+	float: left;
 }
 
-.imagencentral{
-	float:left;
-	text-align:center;
-	width:400px;
-	margin-bottom:-125px;
+.left-services li{
+	position: relative;
+	text-align: right;
+	padding-right: 60px;
+	margin-bottom: 10px;
+}
+
+.left-services img{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.right-services li{
+	position: relative;
+	padding-left: 60px;
+}
+.right-services img{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.cellphone{
+	width: 400px;
+	text-align: center;
+	float: left;
+}
+
+.right-services{
+	width: 400px;
+	float: left;
+}
+
+.pricing-table{
+	background: url(../images/pricing-bg.jpg) center top no-repeat;
+	background-size: contain;
+	margin-top: -100px;
+}
+
+.pricing-table h3{
+	text-align: center;
+	margin: 0;
+	padding: 50px 0 0;
+	font-size: 40px;
+}
+
+.pricing-table h3 + p{
+	text-align: center;
+}
+
+.price-table{
+	background-color: #fff;
+	box-shadow:
+		0 0 10px rgba(0,0,0,0.5)
+		/*-5px -5px 10px rgba(0,0,0,0.5) inset,
+		-5px -5px 10px red,
+		-10px -10px 10px green,
+		-15px -15px 10px orange*/
+		;
+	width: 270px;
+	padding: 30px;
+	float: left;
+	margin-top: 60px;
+	margin-right: 40px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.price-table h4{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.price-table h2{
+	font-size: 50px;
+	margin: 0;
+}
+
+.price-table h2 sup{
+	font-size: 20px;
+	position: relative;
+	top: 5px;
+}
+
+.price-table p{
+	margin: 0 0 30px;
+}
+
+.price-table table{
+	width: 100%;
+}
+
+.price-table td{
+	padding: 5px;
+}
+
+.price-table a{
+	display: block;
+	background-color: #26ABF6;
+	color: #fff;
+	border-radius: 5px;
+	margin-top: 10px;
+	text-decoration: none;
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.price-table:last-of-type{
+	margin-right: 0;
+}
+
+/*.no-margin{
+	margin: 0;
+}*/
+
+/* pseudo selectores
+
+	selector:pseudo-selector{
+		mi regla
 	}
 
-.caja-derecha{
-	float:left;
-	width:400px;
-	margin-top:60px;
+	:last-child
 
-}
+*/
 
-
-.caja-derecha li{
-	position:relative;
-	padding-left:80px;
-	padding-top:3px;
-	
-}
-
-
-.caja-derecha li h3 {
-	text-transform:uppercase;
-	font-size:15px;
-	letter-spacing:2px;
-
-
-}
-
-.iconos-telder{
-	position:absolute;
-	top:0;
-	left:0;
-	
-}
-
-
-
-
-
-
-/*EDITO 5TA SECCION PRICING*/
-
-/*imagen de fondo*/
-#banner2{
-	background: url(../images/pricing-bg.jpg) center top 
-	no-repeat;
-	background-size:cover;
-	height:400px;
-	
-
-}
-
-/*Pricing tables*/
-#banner2 h2:nth-child(1){
-	font-size:40px;
-	text-align:center;
-	padding-top:150px;
-
-}
-
-/*cajas de precios*/
-.precios{
-	width:260px;
-	float:left;
-	text-align:center;
-	margin-right:40px;
-	box-shadow:1px 1px 5px #888;
-	height:400px;
-	background-color:white;
-	
-}
-
-
-/* Pesos */
-.precios h2 {
-	font-size:50px;
-	margin-bottom:0px;
-	font-family:sans-serif;
-}
-
-/*month*/
-.precios p{
-	margin-top:0px;
-}
-
-/*signos sup $*/
-
-.precios sup {
-	font-size:20px;
-}
-
-
-.precios h4 {
-	text-transform:uppercase;
-	font-size:15px;
-}
-
-.precios table {
-	margin:40px auto;
-
-}
-
-
-
-/*select plan*/
-.precios a {
-	border:none;
-	background-color: #06b4f2;
-	color:white;
-	font-size: 12px;
-	text-decoration:none;
-	display:inline-block;
-	width: 80%;
-	border-radius:8px;
-	height:40px;
-	padding-top:10px;
-	text-transform:uppercase;
-	font-family:inherit;
-	font-weight:bold;
-	letter-spacing:2px;
-	
-	
-}
-
-.nomargin {
-	margin:0;
-}
-
-/*FOOTERS */
 
 .main-footer{
-	background-color:rgb(50, 50, 60) ;
-	margin-top:100px;
-	height:200px;
-
+	background-color: #233042;
+	margin-top: 80px;
 }
 
 .main-footer h3{
-	text-align:center;
-	font-size:30px;
-	color:#fff;
-	margin:0;
-	padding: 50px 0;
-	text-shadow:
-			1px 1px 0px black;
-	font-family:tahoma;
-	
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	margin: 0;
+	padding: 60px 0;
+	font-weight: 400;
+	/*text-shadow:
+		3px 3px 5px black,
+		6px 6px 5px red,
+		9px 9px 5px green,
+		12px 12px 5px violet;*/
 }
 
-.bgdark{
-	background-color:#284655;
-	height:100px;
-	margin-top:50px;
-
+.main-footer h3 span{
+	color: #26ABF6;
+	font-weight: 700;
+	font-size: 40px;
 }
+
+.bg-dark{
+	background-color: #151D27;
+	padding: 30px 0;
+}
+
 .copyright{
-	float:left;
-	margin:0;
-	padding-top:45px;
-	color:white;
-
-}
-.footer-nav{ 
-	float:right;
-	height:100px;
-	padding-top:40px;
-
-
+	float: left;
+	margin: 10px 0 0;
+	color: #fff;
+	font-weight: 100;
 }
 
-span {
-	color:lightblue;
+.footer-nav{
+	float: right;
+	margin-top: 10px;
 }
 
-.footer-nav li {
-	float:left;
-	margin:8px 0 0 15px;
+.footer-nav li{
+	display: inline-block;
+	margin-left: 10px;
 }
+
 .footer-nav a{
-	font-family:inherit;
-	text-decoration:none;
-	color:darkgrey;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 100;
 }

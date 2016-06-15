@@ -1,3 +1,3 @@
 #Nuestro primer repositorio
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ex. strong. <strong> Maxime, autem. Repellat quod</strong> autem quos delectus! Possimus at eius atque dolores corrupti, fugiat accusamus qui, vel incidunt itaque, ipsam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <strong>Aliquid vero quod voluptates veritatis</strong> unde esse odit quasi consectetur dolorem sint, facilis ut atque beatae tempora culpa eaque. Debitis, sequi praesentium.</p>
