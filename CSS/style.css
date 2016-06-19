@@ -20,6 +20,7 @@ body{
 /* Resets */
 
 /* agrupación de selectores */
+
 ul, ol{
 	list-style: none; /* elimina la viñeta */
 	margin: 0;
@@ -54,7 +55,7 @@ figure{
 */
 
 .main-header{
-	width: 1200px;
+	max-width: 1200px;
 	margin: auto;
 	padding: 20px 0;
 }
@@ -92,7 +93,7 @@ figure{
 }
 
 .container{
-	width: 1200px;
+	max-width: 1200px;
 	margin: auto;
 }
 
@@ -115,7 +116,7 @@ figure{
 }
 
 .register input{
-	width: 1000px;
+	width: 83%;
 	height: 60px;
 	font-size: 16px;
 	padding: 0 15px;
@@ -125,7 +126,7 @@ figure{
 .register button{
 	border: none;
 	background-color: #06B4F2;
-	width: 195px;
+	width: 15%;
 	height: 60px;
 	color: #fff;
 	font-family: inherit;
@@ -133,10 +134,10 @@ figure{
 }
 
 .producto{
-	width: 300px;
+	width: 25%;
 	text-align: center;
 	float: left;
-	margin-top: 100px;
+	margin-top: 8%;
 	padding: 0 15px;
 }
 
@@ -151,14 +152,14 @@ figure{
 	margin-bottom: 0;
 }
 
-.title-services + p{
+.title-services + p {
 	text-align: center;
 	margin: 0 0 100px;
 	font-size: 16px;
 }
 
 .left-services{
-	width: 400px;
+	width: 33.3%;
 	float: left;
 }
 
@@ -166,7 +167,13 @@ figure{
 	position: relative;
 	text-align: right;
 	padding-right: 60px;
-	margin-bottom: 10px;
+	padding-bottom:30px;
+}
+
+.left-services li h3 {
+	letter-spacing:1px;
+	text-transform:uppercase;	
+	padding-top:15px;
 }
 
 .left-services img{
@@ -175,9 +182,24 @@ figure{
 	top: 0;
 }
 
+
+.right-services{
+	width: 33.3%;
+	float: left;
+}
+
 .right-services li{
 	position: relative;
+	text-align:left;
 	padding-left: 60px;
+	padding-bottom:30px;
+
+}
+
+.right-services li h3 {
+	letter-spacing:1px;
+	text-transform:uppercase;	
+	padding-top:15px;
 }
 .right-services img{
 	position: absolute;
@@ -185,16 +207,19 @@ figure{
 	top: 0;
 }
 
+
 .cellphone{
-	width: 400px;
+	max-width: 33.3%;
 	text-align: center;
 	float: left;
+	padding: 0 15px;
 }
 
-.right-services{
-	width: 400px;
-	float: left;
+
+img{
+	max-width:100%;
 }
+
 
 .pricing-table{
 	background: url(../images/pricing-bg.jpg) center top no-repeat;
@@ -222,15 +247,18 @@ figure{
 		-10px -10px 10px green,
 		-15px -15px 10px orange*/
 		;
-	width: 270px;
+	width: 22.5%;
 	padding: 30px;
 	float: left;
 	margin-top: 60px;
-	margin-right: 40px;
+	margin-right: 3.3%;
 	border-radius: 5px;
 	text-align: center;
 }
 
+.price-table:last-of-type{
+	margin-right: 0;
+}
 .price-table h4{
 	text-transform: uppercase;
 	font-size: 20px;
@@ -271,9 +299,7 @@ figure{
 	letter-spacing: 2px;
 }
 
-.price-table:last-of-type{
-	margin-right: 0;
-}
+
 
 /*.no-margin{
 	margin: 0;
@@ -328,17 +354,285 @@ figure{
 }
 
 .footer-nav{
-	float: right;
-	margin-top: 10px;
+  float: right;
+  margin-top: 10px;
 }
 
 .footer-nav li{
-	display: inline-block;
-	margin-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .footer-nav a{
-	color: #fff;
-	text-decoration: none;
-	font-weight: 100;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 100;
 }
+
+
+
+/*********** COMIENZO PAGINA DE CONTACTOS *************
+************                              *************/
+
+#banner2{
+  background: url(../images/indexbanner-bg2.jpg) center top no-repeat;
+  background-size: cover;
+  padding: 10% 0;
+}
+
+
+.banner2-title{
+  font-size: 50px;
+  color: #fff;
+  margin: 0;
+}
+
+.banner2-text{
+  font-size: 20px;
+  color: #fff;
+}
+
+.title-services2{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.title-services2 + p {
+	text-align: center;
+	margin: 0 0 100px;
+	font-size: 16px;
+}
+
+
+.left-form {
+	float:left;
+	width:50%;
+}
+.left-form input{
+	width:95%;	
+	height: 50px;
+	font-size: 20px;
+	padding: 0 15px;
+	font-family: inherit;
+	margin-bottom:20px;
+	border-radius:5px;
+	float:left;
+}
+
+
+.right-form {
+	float:left;
+	width:50%;
+}
+.right-form input{
+	height:190px;
+	width:100%;
+	font-size: 20px;
+	padding: 0 15px;
+	font-family: inherit;
+	border-radius:5px;
+	font-family: inherit;
+}
+
+.contact-button {
+text-align:center;
+}
+
+.button-form{
+	border: none;
+	background-color: #06B4F2;
+	width: 200px;
+	height: 60px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 15px;
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:2px;
+	border-radius:10px;
+	margin-top:30px;
+}
+
+/***********    COMIENZO MEDIA QUERIES   *************
+************                             *************/
+
+@media (max-width:800px) {
+.container,.main-header{
+		width:95%;
+	}
+
+.producto{
+		width:50%;
+		margin-top:80px;
+	}
+
+
+.left-services li h3{
+	font-size:15px;
+	letter-spacing:0;
+}
+
+.right-services li h3{
+	font-size:15px;
+	letter-spacing:0;
+}
+
+.pricing-table {
+	margin-top:0;
+}
+.price-table {
+		width:48%;
+	}
+.price-table:nth-of-type(even) {
+		margin-right:0;
+	}
+
+.price-table h4 {
+		font-size:15px;
+	}
+
+.price-table table {
+		font-size:12px;
+	}
+
+
+.copyright {
+	float:none;
+	text-align:center;
+}
+
+.footer-nav {
+	float:none;
+	text-align:center;
+}
+}
+
+@media (max-width:600px) {
+
+.logo {
+		float:none;
+		width:100%;
+		text-align:center;
+
+	}	
+
+#banner{
+		background:none;
+	}
+
+.banner-title {
+		display:none;
+	}
+
+.banner-text {
+	display:none;
+}
+
+.main-nav {
+		float:none;
+		text-align:center;
+		margin-top:20px;
+
+	}
+.main-nav li {
+		float:none;
+		margin-top:10px;
+		text-transform:uppercase;
+	}
+
+
+
+.title-services {
+	margin-top:5px;
+}
+.left-services {
+	float:none;
+	width:100%;
+}
+
+.left-services li {
+	text-align:left;
+	position:relative;
+	padding-left:80px;
+
+}
+.left-services img {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.cellphone {
+	float:none;
+	width:100%;
+	margin:auto;
+}
+
+.right-services {
+	float:none;
+	width:100%;
+}
+
+.right-services li {
+	text-align:left;
+	position:relative;
+	padding-left:80px;
+
+}
+.right-services img {
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+#banner2{
+		background:none;
+		display:none;
+	}
+
+.banner2-title {
+		display:none;
+	}
+
+.banner2-text {
+	display:none;
+}
+
+.title-services2{
+	margin-top:20px;
+	font-size:30px;
+}
+
+.left-form,.right-form{
+	width:100%;
+	float:none;
+}
+
+.right-form{
+	width:95%;
+}
+}
+
+@media (max-width:440px) {
+
+.producto{
+		width:100%;
+		margin-top:80px;
+	}
+
+.title-services {
+	margin-top:60px;
+}
+.price-table h4 {
+		font-size:10px;
+	}
+
+.price-table table {
+		font-size:10px;
+	}
+}
+
+
+
